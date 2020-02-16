@@ -4,7 +4,7 @@ window.onload = function() {
     var numar = Math.floor(Math.random() * (quote.length))
     var qu = document.getElementById("Quote")
     qu.innerHTML = quote[numar]
-
+    alert("aaaaa");
     var y = document.getElementById("clock")
     var x = document.getElementById("viz")
     x.style.display = "none";
@@ -26,6 +26,28 @@ window.onload = function() {
 
         z.style.display = "none";
     }
+    var v = document.getElementById("changer");
+
+
+    var w = document.getElementsByClassName("changed");
+
+
+    //var change = window.getComputedStyle(v, null);
+    //alert('a')
+
+    //w[0].style.fontSize = change.getPropertyValue("fontSize");
+    var change = window.getComputedStyle(v, null);
+    var i
+    for (i = 0; i < 4; i++) {
+        //alert('a')
+
+        w[i].style.fontSize = change.getPropertyValue("font-size");
+
+
+
+    }
+
+
 
 
 
